@@ -8,22 +8,22 @@ exports.seed = function(knex) {
         {
           recipe_id: 1,
           ingredient_id: 1,
-          ingredient_recipes: '42'
+          quantity: 42
         },
         {
           recipe_id: 1,
           ingredient_id: 2,
-          ingredient_recipes: '74'
+          quantity: 74
         },
         {
           recipe_id: 1,
           ingredient_id: 3,
-          ingredient_recipes: '64'
+          quantity: 64
         },
         {
           recipe_id: 2,
           ingredient_id: 2,
-          ingredient_recipes: '45'
+          quantity: 45
         }
       ]);
     });

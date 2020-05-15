@@ -10,7 +10,7 @@ exports.up = function(knex) {
     inRec.increments()
     inRec.integer('recipe_id').unsigned().references('id').inTable('recipes').onUpdate('CASCADE').onDelete('RESTRICT')
     inRec.integer('ingredient_id').unsigned().references('id').inTable('ingredients').onUpdate('CASCADE').onDelete('RESTRICT')
-    inRec.float('ingredient_recipes').notNullable()
+    inRec.float('quantity').notNullable()
 })
 
   .createTable('ingredients', ing => {
